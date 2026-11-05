@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Administrateur</title>
+</head>
+<body>
+
+    <h1>Bienvenue dans l'espace administrateur</h1>
+
+    <p>Vous êtes connecté en tant qu'administrateur.</p>
+
+    <h3>Tableau de bord administrateur</h3>
+
+    <ul>
+        <li>Gérer les utilisateurs</li>
+        <li>Consulter les statistiques</li>
+        <li>Administrer l'application</li>
+        <li>Gérer les autorisations</li>
+    </ul>
+
+    <p>
+        <a th:href="@{/}">Retour à l'accueil</a>
+    </p>
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Se déconnecter</button>
+    </form>
+
+</body>
+</html>
