@@ -11,6 +11,11 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
+
     @GetMapping("/user/dashboard")
     public String userDashboard() {
         return "user_dashboard";
